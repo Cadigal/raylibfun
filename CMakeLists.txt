@@ -24,7 +24,9 @@ FetchContent_MakeAvailable(raylib)
 # region Project
 set(
     SOURCE_FILES
-    src/main.cpp
+#    src/main.cpp
+#    src/basics/io.cpp
+    src/basics/calculator.cpp
 )
 add_executable(${PROJECT_NAME} ${SOURCE_FILES})
 target_link_libraries(${PROJECT_NAME} PRIVATE raylib)
